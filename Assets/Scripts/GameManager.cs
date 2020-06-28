@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
             {
                 if (hasPlayedWinLoose==false)
                 {
+                    CameraShake.Shake();
                     hasPlayedWinLoose = true;
                     SoundManager.backgroundAudioSource.Stop();
                     SoundManager.youLoseAudioSource.Play();
@@ -69,6 +70,11 @@ public class GameManager : MonoBehaviour
         {
             SoundManager.shotAudioSource.Play();
         }
+
+
+        //quit App on back button press
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
 
     }
 
@@ -90,7 +96,6 @@ public class GameManager : MonoBehaviour
         if (scoreCount==20)
         {
             hasWon = true;
-            CameraShake.Shake();
         }
     }
 

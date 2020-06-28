@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78bc78fc744a5b545abfe6f2f92e97d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpHieght: 10
   shotSprite: {fileID: 4303527641651844723}
 --- !u!50 &1985934152003173850
 Rigidbody2D:

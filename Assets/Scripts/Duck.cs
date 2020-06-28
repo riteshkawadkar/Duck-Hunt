@@ -26,6 +26,7 @@ public class Duck : MonoBehaviour
 
     private void OnMouseDown()
     {
+        DuckShake.Shake();
         shotSprite.SetActive(true);
 
         transform.rotation = Quaternion.Euler(0, 0, 180f);

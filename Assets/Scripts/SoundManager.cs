@@ -28,7 +28,7 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        backgroundAudioSource = AddAudio(backgroundClip, true, true, 1.0f);
+        backgroundAudioSource = AddAudio(backgroundClip, true, true, 0.25f);
         shotAudioSource = AddAudio(shotClip, false, false, 1.0f);
         quackAudioSource = AddAudio(quackClip, false, false, 1.0f);
         youLoseAudioSource = AddAudio(youLoseClip, false, false, 1.0f);
